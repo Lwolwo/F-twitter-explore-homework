@@ -1,0 +1,13 @@
+.header {
+  @include d-flex(space-between, center);
+  padding: 20px 40px;
+  border-bottom: 1px solid $border-color;
+
+  .logo {
+    @include heading(48px);
+  }
+
+  .nav > ul {
+    @include d-flex;
+  }
+}

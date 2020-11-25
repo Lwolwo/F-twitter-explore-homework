@@ -2,3 +2,9 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin d-flex($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
