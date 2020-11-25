@@ -17,17 +17,36 @@
     .field {
       @include d-flex(flex-start, flex-start);
       flex-direction: column;
-      margin: 20px 0;
+      margin: $margin-px 0;
 
       input {
         width: 100%;
-        margin-top: 20px;
+        margin-top: $margin-px;
         border-bottom: 1px solid $border-color;
         color: $white;
       }
 
       label {
         @include heading(18px);
+      }
+    }
+
+    a {
+      color: $primary-color;
+      cursor: pointer;
+      margin: $margin-px 0;
+      display: block;
+      :hover {
+        color: $white;
+      }
+    }
+
+    .action {
+      @include d-flex;
+      flex-direction: column;
+
+      button {
+        width: 100%;
       }
     }
   }
