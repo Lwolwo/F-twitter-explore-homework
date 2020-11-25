@@ -9,5 +9,9 @@
 
   .nav > ul {
     @include d-flex;
+
+    li {
+      margin: 0 5px;
+    }
   }
 }

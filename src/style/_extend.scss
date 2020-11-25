@@ -1,0 +1,18 @@
+.btn {
+  border-radius: 25px;
+  padding: 8px 40px;
+  cursor: pointer;
+
+  &-default {
+    @extend .btn;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    background-color: $body-bg;
+  }
+
+  &-primary {
+    @extend .btn;
+    color: $white;
+    background-color: $primary-color;
+  }
+}
